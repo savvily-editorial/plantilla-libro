@@ -59,6 +59,9 @@ Este libro debera seguir el siguiente formato:
 
 Dentro de la carpeta del libro unicamente deberemos tener los archivos que sean relativos a la generacion del libro, es decir, los capitulos, la portada, los recursos y los templates. Los capitulos deberan estar numerados de forma que se puedan ordenar de forma correcta, y deberan tener la extension `.md` o `.txt`. Los recursos deberan estar dentro de la carpeta `recursos` y los templates dentro de la carpeta `templates`.
 
+> Nota Importante:
+> En la carpeta `docs`, en el fichero `documentacion-para-el-autor.ms`, encontrarás documentación más extensa sobre los requisitos y la estructura de los libros.
+
 ## 🖥 Extensiones de VSCode
 
 -   [Spell checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker):
