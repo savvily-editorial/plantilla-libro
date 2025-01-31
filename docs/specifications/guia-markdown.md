@@ -71,6 +71,11 @@
     Texto que desees centrar
     \end{center}
     ```
+- **Agregar lineas en blanco**
+    ```
+    \par\vspace{1\baselineskip}\par
+    ```
+    El número determina la cantidad de lineas que deseamos agregar. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, ect.. para que el libro se vea de una manera más ordenada y armónica.
 - **Añadir imágen**
     ```
     \begin{figure}[H]
