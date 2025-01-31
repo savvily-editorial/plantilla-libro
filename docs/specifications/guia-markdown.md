@@ -75,7 +75,7 @@
     ```
     \par\vspace{1\baselineskip}\par
     ```
-    El número determina la cantidad de lineas que deseamos agregar. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, ect.. para que el libro se vea de una manera más ordenada y armónica.
+    El número determina la cantidad de lineas que deseamos agregar, sustituyendolo por la cantidad de lineas en blanco que queramos agregar conseguiremos el resultado deseado. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, etc.. para que el libro se vea de una manera más ordenada y armónica.
 - **Añadir imágen**
     ```
     \begin{figure}[H]
