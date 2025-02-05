@@ -13,28 +13,6 @@
   carpeta **nombre-libro**.
 - Las imágenes deberán utilizar la extensión **png**.
 
-# Problema con el uso de comillas invertidas
-
-Evitar el uso de las comillas invertidas (`) para indicar una palabra o
-frase como código. El sistema de generación de libros no permite generar
-un libro en el que se utilice las comillas invertidas fuera de un bloque
-de código.
-
-Ejemplo de como no debería utilizarse:
-
-texto `código` texto
-
-Las comillas invertidas (`) se pueden utilizar para crear un bloque de
-código que abarque varias líneas de código. Dentro de ese bloque de código
-si se podrá utilizar también las comillas invertidas.
-
-Ejemplo:
-
-```
-  código
-  
-  texto `código` texto
-```
 
 # 📁 Estructura del libro
 
