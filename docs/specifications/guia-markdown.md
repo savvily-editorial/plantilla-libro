@@ -44,7 +44,10 @@
     -
     ...
     ```
-    
+- **Quota o nota**
+    ```
+    > Nota que deseas mostrar
+    ```
 # Formato de texto del documento con LaTeX
 - **Texto en negrita**
     ```
@@ -71,7 +74,7 @@
     Texto que desees centrar
     \end{center}
     ```
-- **Agregar lineas en blanco**
+- **Lineas en blanco**
     ```
     \par\vspace{1\baselineskip}\par
     ```
