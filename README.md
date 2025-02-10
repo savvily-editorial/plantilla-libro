@@ -4,10 +4,10 @@
 - Los nombres de cada uno de los capítulos deberán estar enumerado y no deberán
   contener tildes ni caracteres especiales. Por ejemplo, el nombre del fichero para
   el capítulo 1 podría ser **01_nombre_capitulo.md**.
-- Si existen subcapítulos, estos deberán estar contenidos en el capítulo
+- Si existen sub-capítulos, estos deberán estar contenidos en el capítulo
   principal y deberán seguir la misma estructura de enumeración, **en ningún caso
-  un subcapitulo debe estar en un archivo diferente al del capitulo principal.**
-  Se puede ver un ejemplo de como debería ser la estructura de los capitulos en los archivos de ejemplo.
+  un sub-capítulo debe estar en un archivo diferente al del capitulo principal.**
+  Se puede ver un ejemplo de como debería ser la estructura de los capítulos en los archivos de ejemplo.
 - Las imágenes que se utilicen en cada uno de los capítulos deberán ir
   ubicadas en una carpeta **resources** que se encontrará dentro de la
   carpeta **nombre-libro**.
@@ -35,7 +35,7 @@ Este libro debera seguir el siguiente formato:
 └── Makefile
 ```
 
-Dentro de la carpeta del libro unicamente deberemos tener los archivos que sean relativos a la generacion del libro, es decir, los capitulos, la portada, los recursos y los templates. Los capitulos deberan estar numerados de forma que se puedan ordenar de forma correcta, y deberan tener la extension `.md` o `.txt`. Los recursos deberan estar dentro de la carpeta `recursos` y los templates dentro de la carpeta `templates`.
+Dentro de la carpeta del libro únicamente deberemos tener los archivos que sean relativos a la generación del libro, es decir, los capitulos, la portada, los recursos y los templates. Los capítulos deberán estar numerados de forma que se puedan ordenar de forma correcta, y deberán tener la extension `.md` o `.txt`. Los recursos deberán estar dentro de la carpeta `recursos` y los templates dentro de la carpeta `templates`.
 
 > Nota Importante:
 > En la carpeta `docs`, en el fichero `documentacion-para-el-autor.ms`, encontrarás documentación más extensa sobre los requisitos y la estructura de los libros.

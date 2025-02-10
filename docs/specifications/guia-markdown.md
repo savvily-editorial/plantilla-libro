@@ -4,12 +4,17 @@
     ```
     **Texto que deseamos que esté en negrita**
     ```
-    **`Negrita`**
+    - **Negrita**
 - **Texto en cursiva**
     ```
     *Texto que deseamos que esté en cursiva*
     ```
-    *`Cursiva`*
+  - *Cursiva*
+- **Texto en cursiva**
+    ```
+    _Texto que deseamos que esté en cursiva_
+    ```
+  - _Cursiva_
 - **Título:**
   ```
   # Titulo
@@ -53,17 +58,17 @@
     ```
     \textbf{Texto que deseamos que esté en negrita}
     ```
-    **`Negrita`**
+    - **Negrita**
 - **Texto en cursiva**
     ```
     \textit{Texto que deseamos que esté en cursiva}
     ```
-    *`Cursiva`*
+  - *Cursiva*
 - **Texto en cursiva**
     ```
     \emph{Texto que deseamos enfatizar}
     ```
-    *`Cursiva`*
+    - *Cursiva*
 - **Texto subrayado**
     ```
     \underline{Texto que deseamos que esté subrayado}
@@ -78,7 +83,7 @@
     ```
     \par\vspace{1\baselineskip}\par
     ```
-    El número determina la cantidad de lineas que deseamos agregar, sustituyendolo por la cantidad de lineas en blanco que queramos agregar conseguiremos el resultado deseado. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, etc.. para que el libro se vea de una manera más ordenada y armónica.
+    El número determina la cantidad de lineas que deseamos agregar, sustituyendo por la cantidad de líneas en blanco que queramos agregar conseguiremos el resultado deseado. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, etc.. para que el libro se vea de una manera más ordenada y armónica.
 - **Añadir imágen**
     ```
     \begin{figure}[H]
@@ -113,7 +118,7 @@
     \end{tabular}
 
     ```
-    ![](https://hackmd.io/_uploads/rkkm6F6gT.png)
+    ![tabla](https://hackmd.io/_uploads/rkkm6F6gT.png)
 - **Centrar la tabla**
     ```
     \begin{center}
@@ -124,11 +129,11 @@
     \end{tabular}
     \end{center}
     ```
-    ![](https://hackmd.io/_uploads/ByOGIqalp.png)
+    ![tabla-centrada](https://hackmd.io/_uploads/ByOGIqalp.png)
     - **`\begin{center}`**: Centra la tabla en la página.
     - **`\begin{tabular}`**: Crea la tabla.
     - **`{|c|c|c|c|c|c|c|}`**: Define las columnas de la tabla.
-    - **`\hline`**: lineas de la tabla.
+    - **`\hline`**: líneas de la tabla.
     - **`\end{tabular}`**: Finaliza la tabla.
     - **`\end{center}`**: Finaliza el centrado.
 - **Pie de pagina**
