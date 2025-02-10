@@ -23,19 +23,19 @@ y esta herramienta necesita que al final de cada archivo haya una línea en blan
 terminado y que el siguiente capítulo comienza.
 ### Resúmen de requisitos de la estructura de capítulos.
 - Nombres de los archivos:
-  - Enumerados con un formato de dos dígitos, 01, 02, 03, ...
-  - No deben contener tíldes.
-  - No deben contener espacios, en su lugar utilizaremos guiones medios `-`.
-  - No deben contener caracteres especiales.
+  - Enumerados con un formato de dos dígitos, 01, 02, 03, ... ✅
+  - No deben contener tíldes. ❌
+  - No deben contener espacios ❌, en su lugar utilizaremos guiones medios `-`.✅
+  - No deben contener caracteres especiales. ❌
 - Capítulos:
   - Cada capítulo se marca con un título. El título de define con una sola `#`.
   - Contiene el número del capítulo seguido de un punto `2.`.
-  - El resultado sería: `# 2. Name of chapter 2`.
-  - Debe haber una línea en blanco al final de cada capítulo.
+  - El resultado sería: `# 2. Name of chapter 2`.✅
+  - Debe haber una línea en blanco al final de cada capítulo.👀
 - Sub-capítulos:
   - Los sub-capítulos deben estar dentro de cada uno de los capítulos principales, en ningún caso estarán en archivos diferentes.
   - Cada sub-capítulo se marca con un subtítulo. El subtítulo de defíne con dos `##`.
-    - `## 2.1. Name of sub-chapter 2.1`.
+    - `## 2.1. Name of sub-chapter 2.1`.✅
 
 # 📁 Estructura de los ficheros del libro en el proyecto
 Este libro debera seguir el siguiente formato:
