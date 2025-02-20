@@ -4,7 +4,7 @@
     ```
     **Texto que deseamos que esté en negrita**
     ```
-    - **Negrita**
+  - **Negrita**
 - **Texto en cursiva**
     ```
     *Texto que deseamos que esté en cursiva*
@@ -53,12 +53,15 @@
     ```
     > Nota que deseas mostrar
     ```
+- **Salto de linea forzado**
+  Para forzar a nuestra herramienta a agregar un salto de linea, simplemente tenemos que agregar dos espacios en blanco al final de la linea en la que queremos agregar el salto de linea.
+
 # Formato de texto del documento con LaTeX
 - **Texto en negrita**
     ```
     \textbf{Texto que deseamos que esté en negrita}
     ```
-    - **Negrita**
+  - **Negrita**
 - **Texto en cursiva**
     ```
     \textit{Texto que deseamos que esté en cursiva}
@@ -68,7 +71,7 @@
     ```
     \emph{Texto que deseamos enfatizar}
     ```
-    - *Cursiva*
+  - *Cursiva*
 - **Texto subrayado**
     ```
     \underline{Texto que deseamos que esté subrayado}
@@ -83,28 +86,30 @@
     ```
     \par\vspace{1\baselineskip}\par
     ```
-    El número determina la cantidad de lineas que deseamos agregar, sustituyendo por la cantidad de líneas en blanco que queramos agregar conseguiremos el resultado deseado. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, etc.. para que el libro se vea de una manera más ordenada y armónica.
+  El número determina la cantidad de lineas que deseamos agregar, sustituyendo por la cantidad de líneas en blanco que queramos agregar conseguiremos el resultado deseado. Esto lo podemos utilizar para separar parrafos, imágenes, gráficas, etc.. para que el libro se vea de una manera más ordenada y armónica.
 - **Añadir imágen**
     ```
     \begin{figure}[H]
     \includegraphics[width=6cm]{./resources/figuras_geometricas.png}
     \end{figure}
     ```
-    - **`\begin`**: Marca el inicio desde donde va a partir la imágen.
-    - **`{figure}`** : Indica que vas a añadir una figura al documento.
-    - **`[H]`**: Ancla la figura en el lugar donde se encuentra el código LaTeX, y no permite que LaTeX la mueva automáticamente a una página posterior o a otro lugar para mejorar el diseño.
-    - **`\includegraphics`**: Indica que vamos a añadir una imágen.
-        - **`[width=6cm]`**: Defíne el ancho de la imágen.
-        - **`{./resources/figuras_geometricas.png}`**: Indica la ruta de la imágen.
+  - **`\begin`**: Marca el inicio desde donde va a partir la imágen.
+  - **`{figure}`** : Indica que vas a añadir una figura al documento.
+  - **`[H]`**: Ancla la figura en el lugar donde se encuentra el código LaTeX, y no permite que LaTeX la mueva automáticamente a una página posterior o a otro lugar para mejorar el diseño.
+  - **`\includegraphics`**: Indica que vamos a añadir una imágen.
+    - **`[width=6cm]`**: Defíne el ancho de la imágen.
+    - **`{./resources/figuras_geometricas.png}`**: Indica la ruta de la imágen.
 
 - **Añadir imágen centrada**
     ```
     \begin{figure}[H]
     \centering
     \includegraphics[width=6cm]{./resources/figuras_geometricas.png}
+    \caption{Descripción de la imagen}
+    \label{fig:figuras_geometricas}
     \end{figure}
     ```
-    - **`\cenetring`**: Centra la imágen en la página.
+  - **`\cenetring`**: Centra la imágen en la página.
 - **Crear una tabla**
     ```
     \begin{tabular}{|c|c|c|}
@@ -118,7 +123,7 @@
     \end{tabular}
 
     ```
-    ![tabla](https://hackmd.io/_uploads/rkkm6F6gT.png)
+  ![tabla](https://hackmd.io/_uploads/rkkm6F6gT.png)
 - **Centrar la tabla**
     ```
     \begin{center}
@@ -129,20 +134,20 @@
     \end{tabular}
     \end{center}
     ```
-    ![tabla-centrada](https://hackmd.io/_uploads/ByOGIqalp.png)
-    - **`\begin{center}`**: Centra la tabla en la página.
-    - **`\begin{tabular}`**: Crea la tabla.
-    - **`{|c|c|c|c|c|c|c|}`**: Define las columnas de la tabla.
-    - **`\hline`**: líneas de la tabla.
-    - **`\end{tabular}`**: Finaliza la tabla.
-    - **`\end{center}`**: Finaliza el centrado.
+  ![tabla-centrada](https://hackmd.io/_uploads/ByOGIqalp.png)
+  - **`\begin{center}`**: Centra la tabla en la página.
+  - **`\begin{tabular}`**: Crea la tabla.
+  - **`{|c|c|c|c|c|c|c|}`**: Define las columnas de la tabla.
+  - **`\hline`**: líneas de la tabla.
+  - **`\end{tabular}`**: Finaliza la tabla.
+  - **`\end{center}`**: Finaliza el centrado.
 - **Pie de pagina**
     ```
     \footnote[1]{Nota que deseas mostrar al pie de página}:
     ```
-    `1. Nota que deseas mostrar al pie de página`
-    
-    
+  `1. Nota que deseas mostrar al pie de página`
+
+
 # Extras
 ## Herramientas para tranformar un documento a formato Markdown 🛠️
 
