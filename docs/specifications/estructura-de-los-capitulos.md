@@ -1,26 +1,32 @@
 # Estructura de los capítulos
 - Los nombres de los archivos de cada uno de los capítulos deberá estar enumerado y no deberán contener tildes, caracteres especiales ni espacios en blanco. Por ejemplo, el nombre del fichero para el capítulo 1 debe ser `01_nombre_capitulo.md`. Este punto es muy importante para poder generar el libro de manera correcta.
-- Si existen sub-capítulos, estos deberán estar contenidos en el capítulo principal y deberán seguir la misma estructura de enumeración, **en ningún caso un sub-capítulo debe estar en un archivo diferente al del capítulo principal.** Es muy importante numerar bien capítulos, sub-capítulos, etc., ya que esta definición es la que va a generar el posterior índice del libro. Si los capítulos y sub-capítulos no están bien definidos no se generará correctamente el índice del libro. Por ejemplo de la siguiente manera.
+- Si existen sub-capítulos, estos deberán estar contenidos en el capítulo principal, **en ningún caso un sub-capítulo debe estar en un archivo diferente al del capítulo principal.**
+# Numeración de los capítulos
+- Es muy importante numerar bien los capítulos ya que esta definición es la que va a generar el posterior índice del libro. Si los capítulos no están bien definidos no se generará correctamente el índice del libro.
+### Capítulos
+- Cada capítulo se marca con un título. El título se define con una sola `#`, el número del capítulo seguido de un punto y el nombre del capítulo, quedaría de esta manera `# 1. Capítulo`
+### Sub-capítulos
+- Los sub-capítulos y sub-sub-capítulos *nunca se enumeran*, solo los capítulos principales tienen numeración.
+- Los sub-capítulo se define con dos `##`.
+- Los sub-sub-capítulos se defienden con tres `###`.
+
 ```
-# 2. Name of chapter 2
+# 1. Capítulo
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-## 2.1. Section 1
+## Sub-capítulo
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-### 2.1.1. Subsection 1
+### Sub-sub-capítulo
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-### 2.1.2. Subsection 2
+### Sub-sub-capítulo
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-#### 2.1.1.1. Subsubsection 1
+## Sub-capítulo
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ```
-- Al final de cada uno de los archivos de los capítulos es muy importante dejar una línea en blanco, esto es para que la 
-generación del libro se realice de manera correcta. La herramienta que se utiliza para la generación del libro es `pandoc` 
-y esta herramienta necesita que al final de cada archivo haya una línea en blanco para poder reconocer que el capítulo ha 
-terminado y que el siguiente capítulo comienza.
+- Al final de cada uno de los archivos de los capítulos es muy importante **dejar una línea en blanco**, esto es para que la generación del libro se realice de manera correcta. La herramienta que se utiliza para la generación del libro necesita que al final de cada archivo haya una línea en blanco para poder reconocer que el capítulo ha terminado y que el siguiente capítulo comienza.
 ### Resúmen de requisitos de la estructura de capítulos.
 - Nombres de los archivos:
   - Enumerados con un formato de dos dígitos, 01, 02, 03, ... ✅
@@ -28,14 +34,15 @@ terminado y que el siguiente capítulo comienza.
   - No deben contener espacios ❌, en su lugar utilizaremos guiones medios `-`.✅
   - No deben contener caracteres especiales. ❌
 - Capítulos:
-  - Cada capítulo se marca con un título. El título e define con una sola `#`.
+  - Cada capítulo se marca con un título. El título se define con una sola `#`.
   - Contiene el número del capítulo seguido de un punto `2.`.
   - El resultado sería: `# 2. Name of chapter 2`.✅
   - Debe haber una línea en blanco al final de cada capítulo.👀
 - Sub-capítulos:
   - Los sub-capítulos deben estar dentro de cada uno de los capítulos principales, en ningún caso estarán en archivos diferentes.
-  - Cada sub-capítulo se marca con un subtítulo. El subtítulo se define con dos `##`.
-    - `## 2.1. Name of sub-chapter 2.1`.✅
+  - Los sub-capítulos y sub-sub-capítulos *nunca se enumeran*, solo los capítulos principales tienen numeración . El subtítulo se define con dos `##`.
+    - `## Sub-capítulo`.✅
+    - `### Sub-sub-capítulo`.✅
 
 # 📁 Estructura de los ficheros del libro en el proyecto
 Este libro deberá seguir el siguiente formato:
@@ -48,7 +55,7 @@ Este libro deberá seguir el siguiente formato:
 ├── 13_sabiduria.md
 ├── ...
 ├── resources
-│   ├── portada-libro.png
+│   ├── front-cover.png
 │   ├── pub-data
 │   ├── ...
 ├── templates
@@ -57,8 +64,8 @@ Este libro deberá seguir el siguiente formato:
 └── Makefile
 ```
 
-Dentro de la carpeta del libro únicamente deberemos tener los archivos que sean relativos a la generación del libro, es decir, los capítulos, la portada, los recursos y los templates.
+Dentro de la carpeta del libro únicamente deberemos tener los archivos que sean relativos a la generación del libro, es decir, los capítulos, la portada, la contraportada, los recursos y los templates.
 
-Los capítulos deberán estar numerados de forma que se puedan ordenar de forma correcta, y deberán tener la extension `.md`.
+Los archivos de los capítulos deberán estar numerados de forma que se puedan ordenar de forma correcta, y deberán tener la extension `.md`.
 
 Los recursos como son las imágenes, deberán estar dentro de la carpeta `recursos` y las plantillas dentro de la carpeta `templates`.
